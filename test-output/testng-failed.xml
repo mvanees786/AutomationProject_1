@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Tests.LoginTest">
+      <class name="Tests.TC004_BrowserTabsTest">
         <methods>
-          <include name="testLogin"/>
+          <include name="browserTabsTests"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- Tests.LoginTest -->
+      </class> <!-- Tests.TC004_BrowserTabsTest -->
+      <class name="Tests.TC003_ActionsTest">
+        <methods>
+          <include name="actionsTests"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.TC003_ActionsTest -->
+      <class name="Tests.TC002_AccordionTest">
+        <methods>
+          <include name="accordianTests"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.TC002_AccordionTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

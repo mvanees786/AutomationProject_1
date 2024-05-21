@@ -7,20 +7,39 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
+		<!-- WebDriverManager dependency -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.4.1</version> <!-- or the latest version -->
+		</dependency>
 
-	
+
 		<!-- Selenium WebDriver -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>4.1.0</version>
 		</dependency>
+
+
 		<!-- TestNG -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.4.0</version>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-http-jdk-client</artifactId>
+			<version>4.8.1</version>
+		</dependency>
+		<dependency>
+			<groupId>CoreJ</groupId>
+			<artifactId>CoreJ</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
